@@ -14,7 +14,7 @@ from deepnet import util
 from google.protobuf import text_format
 import sys
 
-def SetUpTrainer(data_dir,model_dir,representation_dir,numsplits):
+def SetUpTrainer(data_dir,model_dir,representation_dir):
     trainer_config_names = ['train_CD_visual_layer1.pbtxt',
                             'train_CD_visual_layer2.pbtxt',
                             'train_CD_audio_layer1.pbtxt',
@@ -41,7 +41,6 @@ def main():
     vdata_pbtxt_file = os.path.join(data_dir, 'visualonlydata.pbtxt')
     gpu_mem = sys.argv[4]
     main_mem = sys.argv[5]
-    numsplits = sys.argv[6]
 
     #Edit the data configuration file
     avdata_pb = util.ReadData(avdata_pbtxt_file)
@@ -59,7 +58,7 @@ def main():
         text_format.PrintMessage(vdata_pb, f)
 
     #Set up the trainer configuration file
-    SetUpTrainer(data_dir,model_dir,representation_dir,numsplits)
+    SetUpTrainer(data_dir,model_dir,representation_dir)
 
 if __name__ == '__main__':
   main()
