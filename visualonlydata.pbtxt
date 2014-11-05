@@ -1,0 +1,18 @@
+name: "visualonly"
+data {
+  name: "visual_unlabelled"
+  file_pattern: "Visual_Data/Unlabelled/TestVisual*.npy"
+  size: 46154
+  dimensions: 1770
+  stats_file: "visual_stats.npz"
+}
+data {
+  name: "visual_labelled"
+  file_pattern: "Visual_Data/Unlabelled/TestVisual*.npy"
+  size: 46154
+  dimensions: 1770
+  stats_file: "visual_stats.npz"
+}
+gpu_memory: "1G"
+main_memory: "16G"
+prefix: "/home/chao/Lipreading_DBN/"
