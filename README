@@ -1,0 +1,9 @@
+Visual Speech Recognition Using Deep Belief Network.
+GPU is used to accelerate the training and testing process
+Codes are built on deepnet and cudamat.
+You need to install deepnet and cudamat beforehand.
+Please feel free to use them at your own risk :)
+--Chao Sui (Luke)
+
+
+1. RunAll.sh: Bash Shell Script acts as main function. 
