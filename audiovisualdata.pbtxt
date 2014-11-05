@@ -1,0 +1,32 @@
+name: "audiovisual"
+data {
+  name: "visual_unlabelled"
+  file_pattern: "Visual_Data/Unlabelled/LBPdata*.npy"
+  size: 302500
+  dimensions: 1770
+  stats_file: "visual_stats.npz"
+}
+data {
+  name: "visual_labelled"
+  file_pattern: "Visual_Data/Labelled/LBPdata*.npy"
+  size: 91300
+  dimensions: 1770
+  stats_file: "visual_stats.npz"
+}
+data {
+  name: "audio_unlabelled"
+  file_pattern: "Audio_Data/Unlabelled/Audiodata.npy"
+  size: 302500
+  dimensions: 143
+  stats_file: "audio_stats.npz"
+}
+data {
+  name: "audio_labelled"
+  file_pattern: "Audio_Data/Labelled/Audiodata.npy"
+  size: 91300
+  dimensions: 143
+  stats_file: "audio_stats.npz"
+}
+gpu_memory: "1G"
+main_memory: "16G"
+prefix: "/home/chao/Lipreading_DBN/"
