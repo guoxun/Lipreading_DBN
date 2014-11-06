@@ -1,0 +1,14 @@
+optimizer: CD
+stopcondition {
+  all_processed: false
+  steps: 100000
+}
+train: true
+batchsize: 100
+data_proto: "alldata.pbtxt"
+eval_after: 5000
+checkpoint_after: 50000
+checkpoint_directory: "/home/chao/Lipreading_DBN/DBN_Models"
+randomize: true
+verbose: false
+data_proto_prefix: "/home/chao/Lipreading_DBN/"

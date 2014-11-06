@@ -1,0 +1,14 @@
+optimizer: GRADIENT_DESCENT
+stopcondition {
+  all_processed: false
+  steps: 2000000
+}
+train: true
+batchsize: 100
+data_proto: "visual_rbm3_LAST/data.pbtxt"
+eval_after: 1000
+checkpoint_after: 100000
+checkpoint_directory: "/home/chao/Lipreading_DBN/DBN_Models"
+randomize: true
+show_after: 0
+data_proto_prefix: "/home/chao/Lipreading_DBN/DBN_Representations"
